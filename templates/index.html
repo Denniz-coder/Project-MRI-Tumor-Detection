@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRI Scan Tumor Detection</title>
+</head>
+<body>
+    <h1>MRI Scan Tumor Detection</h1>
+    <p>by Dennis Seigha</p>
+    <div>
+        <a id="button" href="{{url_for('scan')}}">Get Started</a>
+    </div>
+</body>
+
+<style>
+    body{
+        background-color: #121212;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    p{
+        color: rgb(199, 197, 197);
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+    }
+
+    body > h1 {
+        color: white;
+    }
+
+    #button{
+        color: black;
+        padding: 15px;
+        background-color: aliceblue;
+        text-decoration: none;
+    }
+
+    #button:hover{
+        background-color: #121212;
+        color: white;
+        border: 1px solid white;
+        
+    }
+
+    @media screen and (min-width: 700px) {
+        button{
+            width: 50%;
+        }
+    }
+</style>
+</html>
